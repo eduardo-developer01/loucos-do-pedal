@@ -46,7 +46,7 @@
                 <div id="slider" class="home__sneaker">
                     <div class="home__shape"></div>
                     <img src="./assets/img/front.png" alt="" class="home__img">
-                    <img src="./assets/img/back.png" alt="" class="home__img">
+                    <img src="./assets/img/back-full.png" alt="" class="home__img">
                 </div>
 
                 <div class="home__data">
@@ -68,7 +68,10 @@
                     <div class="sneaker__sale">Novidade</div>
                     <img src="./assets/img/front.png" alt="" class="sneaker__img">
                     <span class="sneaker__name">Camisa Loucos do Pedal</span>
-                    <span class="sneaker__preci">R$49,00</span>
+                    <div style="display: flex; ">
+                        <img width="100px" src="./assets/img/oferta.png" alt="" class="">
+                        <span class="sneaker__preci">R$44,99</span>
+                    </div>
                 </article>
             </div>
         </section>
@@ -93,8 +96,10 @@
 
             <div class="footer__box">
                 <h3 class="footer__title">Sigam nas redes sociais </h3>
-                <a href="" class="footer__social"><i class='bx bxl-facebook-square'></i></a>
-                <a href="" class="footer__social"><i class='bx bxl-instagram-alt' ></i></a>
+                <div id="sosial_button" style="display: flex;">
+                    <button class="footer__social"><i class='bx bxl-facebook-square'></i></button>
+                    <button class="footer__social"><i class='bx bxl-instagram-alt' ></i></button>
+                </div>
             </div>
         </div>
         <p class="footer__copy">&#169; 2021 copyright all right reserved</p>
@@ -122,6 +127,12 @@
                 <input type="tel">
                 <input type="submit" value="Aguardar resposta pelo Whatsapp">
             </form>
+        </div>
+    </div>
+    <div class="modal-container modal-sosial" id="modal-s">
+        <div class="modal-sosial">
+            <img src="./assets/img/logo.svg" alt="" class="offer__img">
+            Em breve...
         </div>
     </div>
 

@@ -1,7 +1,24 @@
-/*===== GOOGLE FONTS =====*/
+/*===== FONTS =====*/
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
+@font-face {
+    font-family: run;
+    src: url(./asserts/fonts/run/run.otf)
+}
+
+@font-face {
+    font-family: bronx;
+    src: url(./asserts/fonts/bronx/bronx.ttf)
+}
+
+.modal-sosial {
+    font-family: run, sans-serif;
+    align-items: center;
+    text-align: center;
+    background-color: var(--dark-color);
+    color: white;
+}
 /*===== VARIABLES CSS =====*/
 :root{
     --header-height: 3rem;
@@ -212,11 +229,11 @@ img{
     display: flex;
     justify-content: center;
     align-self: center;
+    width: 100%;
+    height: 100%;
 }
 
 .home__shape{
-    width: 220px;
-    height: 220px;
     background-color: var(--dark-color-lighten);
     border-radius: 50%;
 }
@@ -327,7 +344,7 @@ img{
 
 .sneaker__name, .sneaker__preci{
     font-size: var(--h2-font-size);
-    letter-spacing: .1rem;
+    letter-spacing: .2rem;
     font-weight: var(--font-bold);
 }
 
@@ -497,9 +514,12 @@ img{
 }
 
 .footer__social{
+    background-color: transparent;
+    border: none;
     font-size: 1rem;
     margin-right: .5rem;
     color: var(--white-color);
+    cursor: pointer;
 }
 
 .footer__copy{

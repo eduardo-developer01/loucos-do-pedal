@@ -13,6 +13,9 @@ function iniciaModal(modalID) {
 const logo = document.querySelector("#resev");
 logo.addEventListener("click", () => iniciaModal("modal-m"));
 
+const sosial_button = document.querySelector("#sosial_button");
+sosial_button.addEventListener("click", () => iniciaModal("modal-s"));
+
 document.addEventListener("scroll", () => {
     if (window.pageYOffset > 800) {
         iniciaModal("modal-promocao");
