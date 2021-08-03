@@ -217,7 +217,7 @@ img{
 .home__shape{
     width: 220px;
     height: 220px;
-    background-color: var(--dark-color);
+    background-color: var(--dark-color-lighten);
     border-radius: 50%;
 }
 
@@ -225,8 +225,20 @@ img{
     position: absolute;
     top: 1.5rem;
     max-width: initial;
-    width: 275px;
-    transform: var(--rotate-img);
+    width: 205px;
+}
+
+.home__sneaker img {
+    opacity: 0;
+    transition: opacity 800ms;
+}
+
+.home__sneaker img.selected {
+    opacity: 1;
+}
+
+.home__img img.selected {
+    opacity: 1;
 }
 
 .home__new{

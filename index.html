@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -8,6 +8,7 @@
 
     <!-- ===== CSS ===== -->
     <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/modal.css">
 
     <!-- ===== BOX ICONS ===== -->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
@@ -42,16 +43,17 @@
         <!--===== HOME =====-->
         <section class="home" id="home">
             <div class="home__container bd-grid">
-                <div class="home__sneaker">
+                <div id="slider" class="home__sneaker">
                     <div class="home__shape"></div>
-                        <img src="./assets/img/logo.svg" alt="" class="home__img">
+                    <img src="./assets/img/front.png" alt="" class="home__img">
+                    <img src="./assets/img/back.png" alt="" class="home__img">
                 </div>
 
                 <div class="home__data">
-                    <span class="home__new">Novo</span>
+                    <span class="home__new">Nova</span>
                     <h1 class="home__title">Camisa<br> Loucos do Pedal</h1>
                     <p class="home__description">Sejá um Louco nos pedais</p>
-                    <a href="#" class="button">Reserve já a sua!</a>
+                    <button id="resev" class="button">Reserve já a sua!</button>
                 </div>
             </div>
         </section>
@@ -64,10 +66,9 @@
             <div class="featured__container bd-grid">
                 <article class="sneaker">
                     <div class="sneaker__sale">Novidade</div>
-                    <img src="./assets/img/featured1.png" alt="" class="sneaker__img">
+                    <img src="./assets/img/front.png" alt="" class="sneaker__img">
                     <span class="sneaker__name">Camisa Loucos do Pedal</span>
                     <span class="sneaker__preci">R$49,00</span>
-                    <a href="#" class="button-light">Fazer o Pedido</a>
                 </article>
             </div>
         </section>
@@ -99,9 +100,36 @@
         <p class="footer__copy">&#169; 2021 copyright all right reserved</p>
     </footer>
 
+    <div class="modal-container" id="modal-m">
+        <div class="modal">
+            <form action="">
+                <label for="">Nome:</label>
+                <input type="text" name="nome" maxlength="10">
+                <label for="">Número:</label>
+                <input type="number" maxlength="2">
+                <label for="">Tamanho:</label>
+                <input type="text">
+                <div>
+                    <input type="radio" name="size" value="P">P
+                    <input type="radio" name="size" value="M">M
+                    <input type="radio" name="size" value="G">G
+                    <input type="radio" name="size" value="GG">GG
+                </div>
+                <div class="home__sneaker">
+                    <img class="selected" src="./assets/img/back.png" alt="">
+                </div>
+                <label for="">Número de telefone para contator:</label>
+                <input type="tel">
+                <input type="submit" value="Aguardar resposta pelo Whatsapp">
+            </form>
+        </div>
+    </div>
+
 
     <!--===== MAIN JS =====-->
     <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/slider.js"></script>
+    <script src="./assets/js/modal.js"></script>
 
 </body>
 
