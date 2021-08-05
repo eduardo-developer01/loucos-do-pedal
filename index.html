@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="./assets/img/logo.svg" type="image/x-icon">
 
     <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="./assets/css/font.css">
     <link rel="stylesheet" href="./assets/css/styles.css">
     <link rel="stylesheet" href="./assets/css/modal.css">
 
@@ -109,24 +110,32 @@
         <div class="modal">
             <form action="">
                 <label for="">Nome:</label>
-                <input type="text" name="nome" maxlength="10">
+                <input style="width:110px" name="name" required placeholder="Max 10 letras" type="text" maxlength="10"></br>
+
                 <label for="">Número:</label>
-                <input type="number" maxlength="2">
-                <label for="">Tamanho:</label>
-                <input type="text">
-                <div>
-                    <input type="radio" name="size" value="P">P
-                    <input type="radio" name="size" value="M">M
-                    <input type="radio" name="size" value="G">G
-                    <input type="radio" name="size" value="GG">GG
+                <input name="number" style="width:50px"required placeholder="00" type="text" maxlength="2"></br>
+
+                <input type="radio" required name="pp" value="GG">PP
+                <input type="radio" name="p" value="P">P
+                <input type="radio" name="M" value="M">M
+                <input type="radio" name="G" value="G">G
+                <input type="radio" name="GG" value="GG">GG</br>
+                <div class="modal-camisa">
+                    <img class="modal-img" src="./assets/img/back.png" alt="">
+                    <div class="modal-box-name">
+                        <p id="modal_name">SeuNome</p>
+                    </div>
+                    <div class="modal-box-number">
+                        <p id="modal_number">00</p>
+                    </div>
                 </div>
-                <div class="home__sneaker">
-                    <img class="selected" src="./assets/img/back.png" alt="">
-                </div>
-                <label for="">Número de telefone para contator:</label>
-                <input type="tel">
-                <input type="submit" value="Aguardar resposta pelo Whatsapp">
+                <div id="btnView"style="margin-bottom:30px"class="button">Visualizar</div><br/>
+                <label for="">Número de telefone:</label><br/>
+                <input required style="width:130px" placeholder="99999-9999" type="tel"><br/>
+                <input class="button" type="submit" value="Aguardar pelo Whatsapp">
             </form>
+            <div>
+            </div>
         </div>
     </div>
     <div class="modal-container modal-sosial" id="modal-s">

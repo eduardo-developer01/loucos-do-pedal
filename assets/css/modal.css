@@ -12,15 +12,47 @@
 }
 
 .modal-container.mostrar {
-    display: flex;
+    display: block;
 }
 
 .modal {
+    display: flex;
     background: white;
     width: 60%;
     min-width: 300px;
-    padding: 40px;
+    margin: 0 auto;
+    padding: 70px 40px;
     position: relative;
+    justify-content: center;
+}
+.modal-img {
+    display: flex;
+    min-width: 200px;
+    width: 2rem;
+}
+
+.modal-camisa {
+    position: relative;
+}
+
+.modal-box-name {
+    font-family: run;
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 30px;
+    left: 3rem;
+    font-size: 1rem;
+}
+
+.modal-box-number {
+    font-family: bronx;
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 60px;
+    left: 70px;
+    font-size: 2.4rem;
 }
 
 @keyframes modal {
@@ -37,3 +69,4 @@
 .mostrar .modal {
     animation: modal 0.3s;
 }
+
