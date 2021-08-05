@@ -21,3 +21,17 @@ document.addEventListener("scroll", () => {
         iniciaModal("modal-promocao");
     }
 });
+
+const btnView = document.querySelector('#btnView')
+
+const modal_name = document.querySelector('#modal_name')
+
+btnView.addEventListener('click', () => {
+    modal_name.innerText = 'foo'
+})
+
+const modal_number = document.querySelector('#modal_number')
+
+btnView.addEventListener('click', () => {
+    modal_number.innerText = '20'
+})

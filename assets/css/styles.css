@@ -1,17 +1,6 @@
 /*===== FONTS =====*/
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
-
-@font-face {
-    font-family: run;
-    src: url(./asserts/fonts/run/run.otf)
-}
-
-@font-face {
-    font-family: bronx;
-    src: url(./asserts/fonts/bronx/bronx.ttf)
-}
-
 .modal-sosial {
     font-family: run, sans-serif;
     align-items: center;
@@ -178,7 +167,7 @@ img{
 }
 
 .nav__logo{
-    font-weight: var(--font-semi-bold);
+    font-family: run;
 }
 
 .nav__toggle, .nav__shop{
