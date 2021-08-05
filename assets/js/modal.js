@@ -16,26 +16,18 @@ logo.addEventListener("click", () => iniciaModal("modal-m"));
 const sosial_button = document.querySelector("#sosial_button");
 sosial_button.addEventListener("click", () => iniciaModal("modal-s"));
 
-document.addEventListener("scroll", () => {
-    if (window.pageYOffset > 800) {
-        iniciaModal("modal-promocao");
-    }
-});
+const modal_name = document.querySelector('#modal_name'),
+    default_name = document.querySelector('#default_name'),
+    modal_number = document.querySelector('#modal_number'),
+    btnView = document.querySelector('#btnView'),
+    user_name = document.querySelector("#user_name").value,
+    user_number = document.querySelector('#user_number').value
 
-const btnView = document.querySelector('#btnView')
-
-const modal_name = document.querySelector('#modal_name')
-const default_name = document.querySelector('#default_name')
 
 btnView.addEventListener('click', () => {
-    modal_name.innerText = 'foo'
+
+    modal_name.innerText = user_name
     default_name.style.color = "transparent"
+    modal_number.innerText = user_number
 })
-
-const modal_number = document.querySelector('#modal_number')
-
-btnView.addEventListener('click', () => {
-    modal_number.innerText = '20'
-})
-
 
