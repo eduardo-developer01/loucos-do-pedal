@@ -25,9 +25,11 @@ document.addEventListener("scroll", () => {
 const btnView = document.querySelector('#btnView')
 
 const modal_name = document.querySelector('#modal_name')
+const default_name = document.querySelector('#default_name')
 
 btnView.addEventListener('click', () => {
     modal_name.innerText = 'foo'
+    default_name.style.color = "transparent"
 })
 
 const modal_number = document.querySelector('#modal_number')
@@ -35,3 +37,5 @@ const modal_number = document.querySelector('#modal_number')
 btnView.addEventListener('click', () => {
     modal_number.innerText = '20'
 })
+
+
