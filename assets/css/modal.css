@@ -55,6 +55,9 @@
     font-size: 2.4rem;
 }
 
+#btnView {
+    cursor: pointer;
+}
 @keyframes modal {
     from {
         opacity: 0;
