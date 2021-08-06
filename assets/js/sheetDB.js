@@ -7,7 +7,7 @@ form.addEventListener("submit", (e) => {
     })
         .then((response) => response.json())
         .then((html) => {
-            window.location.href = 'loucos-do-pedal.vercel.app/pages/thank.html'
+            window.location.href = '/pages/thank.html'
         });
 });
 
